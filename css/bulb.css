@@ -1,0 +1,32 @@
+.bulb-container {
+  width: fit-content;
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.bulb-container img {
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  content: url(/img/bulb__white.png);
+  animation: bulbMove 1s infinite;
+}
+
+.bulb-container-on .bulb-light {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(216, 216, 216);
+  border-radius: 50%;
+  filter: blur(50px);
+  transform: scale(4);
+  animation: bulbBlink 5s infinite;
+}
+
+.bulb-container-on img {
+  content: url(/img/bulb__black.png);
+}
